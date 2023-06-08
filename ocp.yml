@@ -1,0 +1,16 @@
+---
+- name: login to openshift
+  hosts: localhost
+  gather_facts: no
+  module_defaults:
+    group/community.okd.okd:
+      host: https://api.ocp-amro.hqdomain.com
+      ca_cert: ca.pem
+  tasks:
+    - name: Login to OpenShift
+      community.okd.openshift_auth:
+        host: https://api.ocp-amro.hqdomain.com
+        username: amro
+        password: amro
+        validate_certs: false
+      register: oc_login
