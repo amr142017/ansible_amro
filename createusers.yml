@@ -1,0 +1,8 @@
+---
+- name: creating username on rhel machine
+  hosts: 172.16.226.51
+  gather_facts: false
+  tasks:
+    - name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+      ansible.builtin.user:
+        name: ghazaly
