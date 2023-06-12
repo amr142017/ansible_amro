@@ -1,0 +1,8 @@
+---
+
+- name: install collections
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: installation
+      shell: ansible-galaxy collection install community.okd
