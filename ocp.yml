@@ -1,16 +1,18 @@
 ---
-- name: login to openshift
+- name: Log in to OpenShift cluster and create namespace
   hosts: localhost
   gather_facts: no
-  module_defaults:
-    group/community.okd.okd:
-      host: https://api.ocp-amro.hqdomain.com
-      ca_cert: ca.pem
+
+  vars:
+    namespace_name: "Amro-ns-test"
+
   tasks:
-    - name: Login to OpenShift
-      community.okd.openshift_auth:
-        host: https://api.ocp-amro.hqdomain.com
-        username: amro
-        password: amro
-        validate_certs: false
-      register: oc_login
+    - name: Log in to OpenShift cluster
+      openshift_login:
+        server_url: "{{ openshift_api_url }}"
+        token: "{{ openshift_bearer_token }}"
+
+    - name: Create namespace
+      openshift_project:
+        state: present
+        name: "{{ namespace_name }}"
