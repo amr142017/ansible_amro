@@ -2,6 +2,9 @@
 - name: Log in to OpenShift cluster and create namespace
   hosts: localhost
   gather_facts: no
+  dependencies:
+  collections:
+    - name: community.okd
   module_defaults:
     group/community.okd.okd:
       host: https://api.ocp-amro.hqdomain.com/
