@@ -2,6 +2,10 @@
 - name: Log in to OpenShift cluster and create namespace
   hosts: localhost
   gather_facts: no
+  module_defaults:
+    group/community.okd.okd:
+      host: https://api.ocp-amro.hqdomain.com/
+      ca_cert: ca.pem
   tasks:
     - name: Log in (obtain access token)
       community.okd.openshift_auth:
