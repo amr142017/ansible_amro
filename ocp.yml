@@ -2,16 +2,13 @@
 - name: Log in to OpenShift cluster and create namespace
   hosts: localhost
   gather_facts: no
-
   vars:
     namespace_name: "Amro-ns-test"
-
   tasks:
     - name: Log in to OpenShift cluster
       openshift_login:
         server_url: "{{ openshift_api_url }}"
         token: "{{ openshift_bearer_token }}"
-
     - name: Create namespace
       openshift_project:
         state: present
