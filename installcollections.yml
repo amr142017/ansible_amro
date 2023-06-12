@@ -9,6 +9,6 @@
       shell: ansible-galaxy collection list
       register: result  
     - name: Print return information from the previous task
-     ansible.builtin.debug:
-      var: result
-      verbosity: 2
+      ansible.builtin.debug:
+        var: result
+        verbosity: 2
