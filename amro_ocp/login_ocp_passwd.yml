@@ -1,0 +1,13 @@
+---
+- name: login k8s
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: login k8s
+      kubernetes.core.k8s_auth:
+        username: amro
+        password: amro
+        host: https://api.ocp-amro.hqdomain.com:6443
+        validate_certs: false
+      register: k8s_auth_results
+      
