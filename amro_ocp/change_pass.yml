@@ -2,6 +2,7 @@
 - name: change password of user ldap
   hosts: 172.16.20.20
   gather_facts: no
+  collections: community.windows
   tasks:
     - name: reset pass of username OC-AD-Amro-Test
       community.windows.win_domain_user:
