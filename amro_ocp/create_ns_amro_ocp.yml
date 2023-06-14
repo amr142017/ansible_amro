@@ -5,7 +5,7 @@
   tasks:
     - name: Create a k8s namespace
       kubernetes.core.k8s:
-        name: amrotesting299822
+        name: amrotesting299822984uhg
         api_version: v1
         kind: Namespace
         state: present
