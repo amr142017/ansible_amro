@@ -1,0 +1,14 @@
+---
+collections:
+  - name: community.windows
+    version: 1.0.0
+    source: https://galaxy.ansible.com/
+  - name: community.windows
+    version: 1.13.0
+    source: https://galaxy.ansible.com/
+  - name: ansible.windows
+    version: 1.14.0
+    source: https://galaxy.ansible.com/
+  - name: microsoft.ad
+    version: 1.2.0
+    source: https://galaxy.ansible.com/
