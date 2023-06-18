@@ -8,3 +8,4 @@
         name: OC-AD-Amro-Test
         update_password: ouiEW$%172##gh!cf
         domain_server: hqdomain.com
+        state: present
