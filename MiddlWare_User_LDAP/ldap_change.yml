@@ -2,8 +2,6 @@
 - name: reset
   hosts: 172.16.20.20
   gather_facts: no
- # vars:
- #   ldap_pass: ""
   tasks:
     - name: reset user on AD
       community.windows.win_domain_user:
