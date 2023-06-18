@@ -1,1 +1,12 @@
-
+---
+- name: reset
+  hosts: 172.16.20.20
+  gather_facts: no
+  tasks:
+    - name: reset
+      microsoft.ad.user:
+        name: OC-AD-Amro-Test
+        password: ouifhh$%172##
+        domain_username: hqdomain\t0.yehia
+        domain_password: RmaFc##002
+        domain_server: HQDC01.hqdomain.com
