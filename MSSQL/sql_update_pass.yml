@@ -9,6 +9,6 @@
     sql_password: Mid@2022
   tasks:
     - name: Update Password_Test value
-      win_shell: "sqlcmd -S {{ server_name }} -d {{ database_name }} -U {{ sql_username }} -P {{ sql_password }} -Q \"UPDATE SystemParameters SET [Value] = 'hamada' WHERE [Key] = 'Password_Test'\""
+      win_shell: "sqlcmd -S {{ server_name }} -d {{ database_name }} -U {{ sql_username }} -P {{ sql_password }} -Q \"UPDATE SystemParameters SET [Value] = 'eprahim' WHERE [Key] = 'Password_Test'\""
     - name: Update UserName_Test value
-      win_shell: "sqlcmd -S {{ server_name }} -d {{ database_name }} -U {{ sql_username }} -P {{ sql_password }} -Q \"UPDATE SystemParameters SET [Value] = 'hamoksha' WHERE [Key] = 'UserName_Test'\""
+      win_shell: "sqlcmd -S {{ server_name }} -d {{ database_name }} -U {{ sql_username }} -P {{ sql_password }} -Q \"UPDATE SystemParameters SET [Value] = 'eprahim' WHERE [Key] = 'UserName_Test'\""
