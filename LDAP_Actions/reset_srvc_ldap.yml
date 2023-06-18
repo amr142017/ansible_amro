@@ -4,8 +4,6 @@
   gather_facts: no
   tasks:
     - name: reset
-      microsoft.ad.user:
+        community.windows.win_domain_user:
         name: OC-AD-Amro-Test
-        sam_account_name: OC-AD-Amro-Test
         password: Welcome%$2023d
-        state: present
