@@ -2,8 +2,8 @@
 - name: reset
   hosts: 172.16.20.20
   gather_facts: no
-  vars:
-    ldap_pass: "WelcomeAns%159"
+ # vars:
+ #   ldap_pass: "WelcomeAns%159"
   tasks:
     - name: reset
       community.windows.win_domain_user:
