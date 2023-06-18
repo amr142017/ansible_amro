@@ -5,5 +5,7 @@
   tasks:
     - name: reset
       microsoft.ad.user:
-        name: OC-AD-Amro-Test
+        name: OC-AD-Amro-Test@hqdomain.com
         password: ouiEW$%172##gh!cf
+        password_expired: no
+        state: present
