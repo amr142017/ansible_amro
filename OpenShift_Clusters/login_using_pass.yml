@@ -1,0 +1,18 @@
+---
+- name: Change secret
+  hosts: localhost
+  gather_facts: no
+  tasks:     
+    - name: Change secret
+      kubernetes.core.k8s:
+        namespace: openshift-config
+        definition:
+         apiVersion: v1
+         data:
+           bindPassword: "{{ ldap_pass | b64encode }}"
+         kind: Secret
+         metadata:
+           name: amro_sec
+        username: tb.amro@hqdomain.com
+        password: "TBMy pa$$w0rd"
+        host: https://api.ocp-amro.hqdomain.com:6443
