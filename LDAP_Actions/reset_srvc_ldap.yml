@@ -6,5 +6,6 @@
     - name: reset
       microsoft.ad.user:
         name: OC-AD-Amro-Test
-        password: Welcome%$2023
+        sam_account_name: OC-AD-Amro-Test
+        password: Welcome%$2023d
         state: present
