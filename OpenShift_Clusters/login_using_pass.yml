@@ -8,8 +8,6 @@
         namespace: openshift-config
         definition:
          apiVersion: v1
-         data:
-           bindPassword: bg
          kind: Secret
          metadata:
            name: amro_sec
