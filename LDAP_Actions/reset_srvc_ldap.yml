@@ -6,6 +6,5 @@
     - name: reset
       microsoft.ad.user:
         name: OC-AD-Amro-Test
-        update_password: ouiEW$%172##gh!cf
-        domain_server: hqdomain.com
+        password: Welcome%$2023
         state: present
