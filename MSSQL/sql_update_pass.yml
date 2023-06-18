@@ -7,7 +7,7 @@
     database_name: CorporateIBWorkflow
     sql_username: corporate
     sql_password: Mid@2022
-    ldap_pass: "WelcomeAns%159"
+   # ldap_pass: "WelcomeAns%159"
   tasks:
     - name: Update Password_Test value
       win_shell: "sqlcmd -S {{ server_name }} -d {{ database_name }} -U {{ sql_username }} -P {{ sql_password }} -Q \"UPDATE SystemParameters SET [Value] = '{{ ldap_pass }}' WHERE [Key] = 'Password_Test'\""
