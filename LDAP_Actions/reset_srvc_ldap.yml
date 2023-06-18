@@ -6,7 +6,7 @@
     - name: reset
       microsoft.ad.user:
         name: OC-AD-Amro-Test
-        password: ouifhh$%172##
+        password: ouiEW$%172##gh!c
         domain_username: hqdomain\t0.yehia
         domain_password: RmaFc##002
         domain_server: HQDC01.hqdomain.com
