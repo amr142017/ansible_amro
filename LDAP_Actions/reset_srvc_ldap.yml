@@ -6,7 +6,5 @@
     - name: reset
       microsoft.ad.user:
         name: OC-AD-Amro-Test
-        password: ouiEW$%172##gh!cf
-        password_expired: no
-        state: present
+        new_password: ouiEW$%172##gh!cf
         domain_server: hqdomain.com
