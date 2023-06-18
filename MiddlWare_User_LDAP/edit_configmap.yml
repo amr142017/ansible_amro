@@ -13,4 +13,4 @@
          kind: Secret
          metadata:
            name: amro-cm
-        kubeconfig: ansible_amro/OpenShift_Clusters/kubeconfig
+      kubeconfig: OpenShift_Clusters/kubeconfig
