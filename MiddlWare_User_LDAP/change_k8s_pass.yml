@@ -1,0 +1,16 @@
+---
+- name: Change secret
+  hosts: localhost
+  gather_facts: no
+  tasks:     
+    - name: Change secret
+      kubernetes.core.k8s:
+        namespace: openshift-config
+        definition:
+         apiVersion: v1
+         data:
+           bindPassword: "{{ ldap_pass | b64encode }}"
+         kind: Secret
+         metadata:
+           name: setdbparms-ldap.txt-gz9kz
+        kubeconfig: MWkubeconfig
