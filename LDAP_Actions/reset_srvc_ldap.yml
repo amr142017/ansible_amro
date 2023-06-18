@@ -4,6 +4,6 @@
   gather_facts: no
   tasks:
     - name: reset
-        community.windows.win_domain_user:
+      community.windows.win_domain_user:
         name: OC-AD-Amro-Test
         password: Welcome%$2023d
