@@ -13,4 +13,4 @@
          kind: Secret
          metadata:
            name: setdbparms-ldap.txt-gz9kz
-        kubeconfig: MWkubeconfig
+        kubeconfig: ipnkubeconfig
