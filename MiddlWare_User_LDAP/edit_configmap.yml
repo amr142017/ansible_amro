@@ -13,4 +13,4 @@
          kind: Secret
          metadata:
            name: amro-cm
-      kubeconfig: amrokubeconfig
+        kubeconfig: amrokubeconfig
