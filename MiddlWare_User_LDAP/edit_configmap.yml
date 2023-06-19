@@ -9,7 +9,7 @@
         definition:
          apiVersion: v1
          data:
-           MIDDLEWARE_BASIC_AUTH_USERNAME: AMro
+           MIDDLEWARE_BASIC_AUTH_USERNAME: hi
          kind: Secret
          metadata:
            name: amro-cm
